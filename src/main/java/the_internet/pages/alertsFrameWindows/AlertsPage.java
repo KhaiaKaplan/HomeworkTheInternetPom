@@ -16,7 +16,6 @@ public class AlertsPage extends BasePage {
     WebElement AlertButton;
 
 
-
     public AlertsPage verifyAlert() {
         AlertButton.click();
         Assertions.assertTrue(isAlertPresent());
