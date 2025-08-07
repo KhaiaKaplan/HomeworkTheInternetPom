@@ -4,22 +4,22 @@ import com.the_internet.core.TestBase;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import the_internet.pages.alertsFrameWindows.HomePage;
-import the_internet.pages.drag.SliderPage;
+import the_internet.pages.links.BrokenImagesPage;
 
-public class SliderTests extends TestBase {
+public class BrokenImagesTests extends TestBase {
 
     HomePage homePage;
-
+    BrokenImagesPage brokenImages;
 
     @BeforeEach
     public void precondition(){
         homePage = new HomePage(driver);
-        new HomePage(driver).selectSlider();
+        brokenImages= new BrokenImagesPage(driver);
+        new HomePage(driver).selectBrokenImages();
     }
 
     @Test
-    public void SliderTest() {
-        new SliderPage(driver).moveSliderInHorizontalDirection()
-                .verifySliderByText("5");
+    public void checkBrokenImagesTest() {
+        brokenImages.checkBrokenImages();
     }
 }

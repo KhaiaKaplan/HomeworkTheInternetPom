@@ -7,6 +7,7 @@ import the_internet.core.BasePage;
 import the_internet.pages.drag.DragAndDropPage;
 import the_internet.pages.drag.SliderPage;
 import the_internet.pages.dropdown.DropdownMenuPage;
+import the_internet.pages.links.BrokenImagesPage;
 
 public class HomePage extends BasePage {
 
@@ -61,5 +62,13 @@ public class HomePage extends BasePage {
     public DragAndDropPage selectDragAndDrop() {
         click(dragDrop);
         return new DragAndDropPage(driver);
+    }
+
+    @FindBy (css= "a[href^='/broken_images']")
+    WebElement brokenImage;
+
+    public BrokenImagesPage selectBrokenImages() {
+        click(brokenImage);
+        return new BrokenImagesPage(driver);
     }
 }
