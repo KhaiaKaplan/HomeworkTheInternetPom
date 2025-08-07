@@ -60,7 +60,5 @@ public class AlertsFrameWindowsTests extends TestBase {
         frame.switchToFrameByName("frame-bottom")
                 .verifyFrameByTitle("BOTTOM");
     }
-
-
 }
 
