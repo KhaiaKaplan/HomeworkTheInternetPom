@@ -14,6 +14,7 @@ public class WindowsPage extends BasePage {
 
     @FindBy(css = "a[href^='/windows/new']")
     WebElement linkButton;
+
     public WindowsPage switchToNewTab(int index) {
         linkButton.click();
         switchToNewWindow(index);
@@ -22,6 +23,7 @@ public class WindowsPage extends BasePage {
 
     @FindBy(className = "example")
     WebElement newWindow;
+
     public WindowsPage verifyNewTabTitle(String title) {
         Assertions.assertTrue(shouldHaveText(newWindow,title,5));
         return this;
