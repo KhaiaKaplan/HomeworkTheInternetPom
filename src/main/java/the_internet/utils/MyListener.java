@@ -66,10 +66,6 @@ public class MyListener implements WebDriverListener {
         logger.info("{} number of elements found", result.size());
     }
 
-    @Override
-    public void beforeClick(WebElement element) {
-        logger.info("We have to click on element {}", element.toString());
-    }
 
     @Override
     public void afterClick(WebElement element) {

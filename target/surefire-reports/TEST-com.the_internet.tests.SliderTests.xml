@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.the_internet.tests.AlertsFrameWindowsTests" time="12.81" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.the_internet.tests.SliderTests" time="5.165" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -57,31 +57,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="switchToFrameByNameTest" classname="com.the_internet.tests.AlertsFrameWindowsTests" time="7.765">
-    <system-out><![CDATA[02:53:12.045 [main] INFO  the_internet.utils.MyListener -- Open url - https://the-internet.herokuapp.com/
-02:53:14.832 [main] INFO  com.the_internet.core.TestBase -- Start test switchToFrameByNameTest()
-02:53:14.992 [main] INFO  the_internet.utils.MyListener -- Element Decorated {[[ChromeDriver: chrome on windows (7847d3283721fb65f21b2087778d998f)] -> css selector: a[href^='/nested_frames']]} found
-02:53:15.881 [main] INFO  the_internet.utils.MyListener -- We clicked on element [[ChromeDriver: chrome on windows (7847d3283721fb65f21b2087778d998f)] -> css selector: a[href^='/nested_frames']]
-02:53:15.959 [main] INFO  the_internet.utils.MyListener -- Element Decorated {[[ChromeDriver: chrome on windows (7847d3283721fb65f21b2087778d998f)] -> xpath: //body[contains(text(), 'BOTTOM')]]} found
-02:53:16.275 [main] INFO  com.the_internet.core.TestBase -- Stop test
-02:53:16.275 [main] INFO  com.the_internet.core.TestBase -- ********************************************
+  <testcase name="SliderTest" classname="com.the_internet.tests.SliderTests" time="5.159">
+    <system-out><![CDATA[02:53:22.164 [main] INFO  the_internet.utils.MyListener -- Open url - https://the-internet.herokuapp.com/
+02:53:25.072 [main] INFO  com.the_internet.core.TestBase -- Start test SliderTest()
+02:53:25.106 [main] INFO  the_internet.utils.MyListener -- Element Decorated {[[ChromeDriver: chrome on windows (89b32c4bbb65314d614df9826bfaff3c)] -> css selector: a[href^='/horizontal_slider']]} found
+02:53:25.505 [main] INFO  the_internet.utils.MyListener -- We clicked on element [[ChromeDriver: chrome on windows (89b32c4bbb65314d614df9826bfaff3c)] -> css selector: a[href^='/horizontal_slider']]
+02:53:25.536 [Forwarding actions on session 89b32c4bbb65314d614df9826bfaff3c to remote] INFO  the_internet.utils.MyListener -- Element Decorated {[[ChromeDriver: chrome on windows (89b32c4bbb65314d614df9826bfaff3c)] -> css selector: input[type='range']]} found
+02:53:25.966 [main] INFO  the_internet.utils.MyListener -- Element Decorated {[[ChromeDriver: chrome on windows (89b32c4bbb65314d614df9826bfaff3c)] -> id: range]} found
+02:53:26.185 [main] INFO  com.the_internet.core.TestBase -- Stop test
+02:53:26.186 [main] INFO  com.the_internet.core.TestBase -- ********************************************
 ]]></system-out>
-    <system-err><![CDATA[???. 17, 2025 2:53:10 AM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
-WARNING: The chromedriver version (137.0.7151.70) detected in PATH at C:\Tools\chromedriver.exe might not be compatible with the detected chrome version (138.0.7204.185); currently, chromedriver 138.0.7204.183 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
-]]></system-err>
-  </testcase>
-  <testcase name="alertWithSelectResultTest" classname="com.the_internet.tests.AlertsFrameWindowsTests" time="4.702">
-    <system-out><![CDATA[02:53:17.301 [main] INFO  the_internet.utils.MyListener -- Open url - https://the-internet.herokuapp.com/
-02:53:20.147 [main] INFO  com.the_internet.core.TestBase -- Start test alertWithSelectResultTest()
-02:53:20.184 [main] INFO  the_internet.utils.MyListener -- Element Decorated {[[ChromeDriver: chrome on windows (099cb97abc7b72042e87317a655eefdf)] -> css selector: a[href^='/javascript_alerts']]} found
-02:53:20.572 [main] INFO  the_internet.utils.MyListener -- We clicked on element [[ChromeDriver: chrome on windows (099cb97abc7b72042e87317a655eefdf)] -> css selector: a[href^='/javascript_alerts']]
-02:53:20.593 [main] INFO  the_internet.utils.MyListener -- Element Decorated {[[ChromeDriver: chrome on windows (099cb97abc7b72042e87317a655eefdf)] -> xpath: //button[text()='Click for JS Confirm']]} found
-02:53:20.659 [main] INFO  the_internet.utils.MyListener -- We clicked on element [[ChromeDriver: chrome on windows (099cb97abc7b72042e87317a655eefdf)] -> xpath: //button[text()='Click for JS Confirm']]
-02:53:20.734 [main] INFO  the_internet.utils.MyListener -- Element Decorated {[[ChromeDriver: chrome on windows (099cb97abc7b72042e87317a655eefdf)] -> id: result]} found
-02:53:20.990 [main] INFO  com.the_internet.core.TestBase -- Stop test
-02:53:20.991 [main] INFO  com.the_internet.core.TestBase -- ********************************************
-]]></system-out>
-    <system-err><![CDATA[???. 17, 2025 2:53:16 AM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+    <system-err><![CDATA[???. 17, 2025 2:53:21 AM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (137.0.7151.70) detected in PATH at C:\Tools\chromedriver.exe might not be compatible with the detected chrome version (138.0.7204.185); currently, chromedriver 138.0.7204.183 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
 ]]></system-err>
   </testcase>

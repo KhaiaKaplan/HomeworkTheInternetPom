@@ -2,6 +2,7 @@ package com.the_internet.tests;
 
 import com.the_internet.core.TestBase;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import the_internet.pages.alertsFrameWindows.AlertsPage;
 import the_internet.pages.alertsFrameWindows.FramePage;
@@ -28,6 +29,7 @@ public class AlertsFrameWindowsTests extends TestBase {
     }
 
     @Test
+    @Tag("smoky")
     public void alertWithSelectResultTest() {
         homePage.selectAlerts();
         alerts.selectResult("Cancel")
@@ -55,6 +57,7 @@ public class AlertsFrameWindowsTests extends TestBase {
     }
 
     @Test
+    @Tag("smoky")
     public void switchToFrameByNameTest() {
         homePage.selectNestedFrames();
         frame.switchToFrameByName("frame-bottom")

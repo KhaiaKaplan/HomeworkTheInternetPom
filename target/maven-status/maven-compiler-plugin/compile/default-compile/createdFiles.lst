@@ -6,6 +6,7 @@ the_internet\pages\alertsFrameWindows\AlertsPage.class
 the_internet\pages\dropdown\DropdownMenuPage.class
 the_internet\pages\files\FileUploaderPage.class
 the_internet\pages\alertsFrameWindows\WindowsPage.class
+the_internet\utils\MyListener.class
 the_internet\pages\alertsFrameWindows\FramePage.class
 the_internet\pages\drag\SliderPage.class
 the_internet\core\ApplicationManager.class
