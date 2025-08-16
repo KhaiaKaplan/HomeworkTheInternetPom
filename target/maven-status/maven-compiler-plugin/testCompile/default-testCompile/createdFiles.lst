@@ -1,0 +1,7 @@
+com\the_internet\tests\DragAndDropTests.class
+com\the_internet\tests\DropdownMenuTests.class
+com\the_internet\core\TestBase.class
+com\the_internet\tests\SliderTests.class
+com\the_internet\tests\BrokenImagesTests.class
+com\the_internet\tests\FileUploaderTests.class
+com\the_internet\tests\AlertsFrameWindowsTests.class

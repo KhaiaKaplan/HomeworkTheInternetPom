@@ -1,0 +1,11 @@
+the_internet\core\BasePage.class
+the_internet\pages\drag\DragAndDropPage.class
+the_internet\pages\links\BrokenImagesPage.class
+the_internet\pages\alertsFrameWindows\HomePage.class
+the_internet\pages\alertsFrameWindows\AlertsPage.class
+the_internet\pages\dropdown\DropdownMenuPage.class
+the_internet\pages\files\FileUploaderPage.class
+the_internet\pages\alertsFrameWindows\WindowsPage.class
+the_internet\pages\alertsFrameWindows\FramePage.class
+the_internet\pages\drag\SliderPage.class
+the_internet\core\ApplicationManager.class
